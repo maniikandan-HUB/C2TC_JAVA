@@ -1,0 +1,40 @@
+package Day_1;
+
+public class Example_TypeCasting {
+	public static void main(String[] args) {
+		byte b = 50; 
+		int i = b; //4 bytes
+		System.out.println(i);
+		
+		float f = 82.14f;	// 4 bytes
+		double d = f;		// 8 byteas
+		System.out.println(d);
+		
+		char ch = 'X';	// 2 bytes
+		int i3 = ch;	// 4 bytes
+		System.out.println(i3);
+		
+		char var1 = '\u00C7';
+		int i4 = var1;
+		System.out.println(i4);
+		
+		// narrowing/explicit type casting
+
+		double f1 = 100.52f;	
+		long l = (long) f1;
+		System.out.println(l);
+
+		long l1 = 923372036854775806l;
+		int i2 = (int) l1;
+		System.out.println(i2);
+
+		float f2 = 37.56f;
+		int i1 = (int) f2;
+		System.out.println(i1);
+
+		byte b1 = 90;
+		char ch1 = (char) b1;
+		System.out.println(ch1);
+	}
+	
+}
