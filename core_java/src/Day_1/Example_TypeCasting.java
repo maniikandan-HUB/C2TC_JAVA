@@ -7,7 +7,7 @@ public class Example_TypeCasting {
 		System.out.println(i);
 		
 		float f = 82.14f;	// 4 bytes
-		double d = f;		// 8 byteas
+		double d = f;		// 8 bytes
 		System.out.println(d);
 		
 		char ch = 'X';	// 2 bytes
