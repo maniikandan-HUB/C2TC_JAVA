@@ -2,7 +2,7 @@ package com.tnsif.Day_18.Map;
 
 import java.util.*;
 
-import com.tnsif.Day18.Student;
+import com.tnsif.Day_18.Student;
 class HashMapDemo 
 {
 	public static void main(String args[]) 

@@ -16,5 +16,13 @@ public class ArrayOperations {
 	{
 		return a/b;
 	}
+	public void displayArray() {
+		// TODO Auto-generated method stub
+		
+	}
+	public String getElement(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
