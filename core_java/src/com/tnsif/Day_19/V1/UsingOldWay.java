@@ -1,5 +1,8 @@
+//Program to demonstrate calling functional interface using old way
+
 package com.tnsif.Day_19.V1;
 
+//1. Defining Implementable class
 class MyCubeImpl implements MyCube
 {
 	@Override

@@ -1,5 +1,5 @@
+//Program to demonstrates how Vector provides thread safety
 package com.tnsif.Day_16;
-
 
 import java.util.Vector;
 
@@ -9,17 +9,17 @@ public class VectorThreadSafetyExample {
         Vector<Integer> numbers = new Vector<>();
 
         // Create and start two threads
-        Thread producerThread = new Thread(new NumberProducer1(numbers));
+        Thread producerThread = new Thread(new NumberProducer(numbers));
         Thread consumerThread = new Thread(new NumberConsumer(numbers));
         producerThread.start();
         consumerThread.start();
     }
 
     // Thread that produces numbers and adds them to the Vector
-    static class NumberProducer1 implements Runnable {
+    static class NumberProducer implements Runnable {
         private final Vector<Integer> numbers;
 
-        public NumberProducer1(Vector<Integer> numbers) {
+        public NumberProducer(Vector<Integer> numbers) {
             this.numbers = numbers;
         }
 
@@ -56,4 +56,3 @@ public class VectorThreadSafetyExample {
         }
     }
 }
-

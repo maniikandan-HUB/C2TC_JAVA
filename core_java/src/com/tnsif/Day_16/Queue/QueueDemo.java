@@ -1,3 +1,4 @@
+//Program to demonstrate a Queue
 package com.tnsif.Day_16.Queue;
 
 import java.util.LinkedList;
@@ -40,4 +41,3 @@ public class QueueDemo {
 	    }
 
 }
-

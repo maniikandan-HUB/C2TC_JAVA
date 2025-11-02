@@ -1,5 +1,7 @@
 package com.tnsif.Day_19;
 
-public interface Message {
-	public void greet(String name); 
-}
+@FunctionalInterface
+public interface Message{  
+    public void greet(String name);    
+ } 
+

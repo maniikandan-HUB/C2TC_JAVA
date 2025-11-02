@@ -1,5 +1,7 @@
+//Program to demonstrate Functional Interface
 package com.tnsif.Day_19;
 
-public interface IsOdd {
+@FunctionalInterface
+interface IsOdd{
 	public boolean CheckOdd(int a);
 }

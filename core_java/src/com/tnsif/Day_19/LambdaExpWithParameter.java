@@ -1,3 +1,4 @@
+//Program to demonstrate Lambda expression with parameters
 package com.tnsif.Day_19;
 
 import java.util.function.Function;

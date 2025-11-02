@@ -1,3 +1,4 @@
+//Program to demonstrates ArrayList - Not Thread-Safe
 package com.tnsif.Day_16;
 
 import java.util.ArrayList;
@@ -8,17 +9,17 @@ public class ArrayListThreadExample {
         ArrayList<Integer> numbers = new ArrayList<>();
 
         // Create and start two threads
-        Thread producerThread = new Thread(new NumberProducer1(numbers));
+        Thread producerThread = new Thread(new NumberProducer(numbers));
         Thread consumerThread = new Thread(new NumberConsumer(numbers));
         producerThread.start();
         consumerThread.start();
     }
 
     // Thread that produces numbers and adds them to the ArrayList
-    static class NumberProducer1 implements Runnable {
+    static class NumberProducer implements Runnable {
         private final ArrayList<Integer> numbers;
 
-        public NumberProducer1(ArrayList<Integer> numbers) {
+        public NumberProducer(ArrayList<Integer> numbers) {
             this.numbers = numbers;
         }
 

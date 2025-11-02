@@ -1,3 +1,4 @@
+//Program to demonstrate Types of Functional Interfaces 
 package com.tnsif.Day_19;
 
 import java.util.function.BiFunction;
